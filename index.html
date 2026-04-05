@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pattern | Where The Arch Is Art</title>
+<meta name="description" content="Pattern - Premium serviced apartments and retreats in Riyadh. Experience luxury living, curated stays, and exceptional hospitality.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============================================
+     NAVIGATION
+     ============================================ -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo" onclick="showPage('home'); return false;">
+      PATTERN
+      <span lang-en>WHERE THE ARCH IS ART</span>
+      <span lang-ar>حيث العمارة فن</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li>
+        <a href="#" onclick="showPage('home'); return false;">
+          <span lang-en>Home</span><span lang-ar>الرئيسية</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" onclick="showPage('properties'); return false;">
+          <span lang-en>Properties</span><span lang-ar>العقارات</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" onclick="showPage('alghadeer'); return false;">
+          <span lang-en>WKN 25</span><span lang-ar>وكن ٢٥</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" onclick="showPage('qairawan'); return false;">
+          <span lang-en>Qairawan</span><span lang-ar>القيروان</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" onclick="showPage('banban'); return false;">
+          <span lang-en>Banan</span><span lang-ar>بنبان</span>
+        </a>
+      </li>
+      <li>
+        <button class="lang-toggle" onclick="toggleLang()">
+          <span lang-en>عربي</span><span lang-ar>EN</span>
+        </button>
+      </li>
+    </ul>
+    <div class="menu-toggle" id="menuToggle" onclick="toggleMobileMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ============================================
+     WHATSAPP FLOATING BUTTON
+     ============================================ -->
+<a href="https://wa.me/966531217758" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+
+<!-- ============================================
+     BACK TO TOP BUTTON
+     ============================================ -->
+<a href="#" class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">
+  <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg>
+</a>
+
+
+<!-- ============================================
+     PAGE: HOME
+     ============================================ -->
+<div class="page-section active" id="page-home">
+
+  <!-- HERO -->
+  <section class="hero">
+    <!-- IMAGE NOTE: Use a high-quality lifestyle/architecture hero image from AlGhadeer or a composite brand image -->
+    <img src="AlGhadeer/IMG_8936.jpg" alt="Pattern Living" class="hero-bg" onerror="this.style.display='none'">
+    <div class="container hero-content fade-up">
+      <div lang-en>
+        <p class="hero-label">Pattern &mdash; Where The Arch Is Art</p>
+        <h1>Curated Living,<br><em>Redefined.</em></h1>
+        <p class="hero-desc">Premium serviced apartments and retreats in Riyadh. Every stay is designed around comfort, style, and the art of feeling at home.</p>
+        <div class="hero-actions">
+          <a href="https://wa.me/966531217758?text=Hello%20Pattern%2C%20I%E2%80%99d%20like%20to%20learn%20more%20about%20your%20properties." target="_blank" class="btn-whatsapp">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Book Now via WhatsApp
+          </a>
+          <a href="#" onclick="showPage('properties'); return false;" class="btn-secondary">Explore Properties</a>
+        </div>
+      </div>
+      <div lang-ar class="ar-text">
+        <p class="hero-label">باترن &mdash; حيث العمارة فن</p>
+        <h1>إقامة راقية،<br><em>بأسلوب مختلف.</em></h1>
+        <p class="hero-desc">شقق فندقية واستراحات مميزة في الرياض. كل إقامة مصمّمة حول الراحة، الأناقة، والإحساس بأنك في بيتك.</p>
+        <div class="hero-actions">
+          <a href="https://wa.me/966531217758?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D8%A8%D8%A7%D8%AA%D8%B1%D9%86%D8%8C%20%D8%A3%D8%A8%D8%BA%D9%89%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%A3%D9%83%D8%AB%D8%B1%20%D8%B9%D9%86%20%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%D9%83%D9%85." target="_blank" class="btn-whatsapp">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            احجز الآن عبر واتساب
+          </a>
+          <a href="#" onclick="showPage('properties'); return false;" class="btn-secondary">استعرض العقارات</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / BRAND INTRO -->
+  <section class="section about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <!-- IMAGE NOTE: Use AlQairawan interior image here for brand lifestyle feel -->
+          <img src="AlQairawan/2D25630C-129F-4D9F-8C90-A83AD81C4C5A.JPEG" alt="Pattern Interior" onerror="this.parentElement.style.background='var(--warm-gray)'">
+        </div>
+        <div class="fade-up">
+          <div lang-en>
+            <p class="section-label">About Pattern</p>
+            <h2 class="section-title">Spaces Designed<br>for Living Well</h2>
+            <p class="section-desc">Pattern is a premium hospitality brand in Riyadh, offering curated serviced apartments and retreats. We believe every space tells a story — and ours is one of refined comfort, thoughtful design, and seamless living. From urban apartments to private retreats, each property reflects our commitment to quality and the art of architecture.</p>
+          </div>
+          <div lang-ar class="ar-text">
+            <p class="section-label">عن باترن</p>
+            <h2 class="section-title">مساحات مصمّمة<br>لحياة أفضل</h2>
+            <p class="section-desc">باترن علامة ضيافة راقية في الرياض، نقدّم شقق فندقية واستراحات مختارة بعناية. نؤمن أن كل مساحة تحكي قصة — وقصتنا هي قصة راحة مصقولة، تصميم مدروس، وحياة بلا تعقيد. من الشقق في قلب المدينة إلى الاستراحات الخاصة، كل عقار يعكس التزامنا بالجودة وفن العمارة.</p>
+          </div>
+          <div class="about-stats">
+            <div class="stat-item">
+              <h4>3</h4>
+              <p lang-en>Properties</p>
+              <p lang-ar>عقارات</p>
+            </div>
+            <div class="stat-item">
+              <h4>24/7</h4>
+              <p lang-en>Support</p>
+              <p lang-ar>دعم متواصل</p>
+            </div>
+            <div class="stat-item">
+              <h4>5★</h4>
+              <p lang-en>Experience</p>
+              <p lang-ar>تجربة</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROPERTIES SHOWCASE -->
+  <section class="section" id="properties-section">
+    <div class="container">
+      <div class="fade-up" style="text-align:center; max-width:600px; margin:0 auto;">
+        <div lang-en>
+          <p class="section-label">Our Properties</p>
+          <h2 class="section-title" style="margin-left:auto;margin-right:auto;">Find Your Perfect Stay</h2>
+          <p class="section-desc" style="margin-left:auto;margin-right:auto;">Three distinctive properties, each with its own character. Whether you seek urban luxury, a private retreat, or a home away from home — Pattern has a space for you.</p>
+        </div>
+        <div lang-ar class="ar-text" style="text-align:center;">
+          <p class="section-label">عقاراتنا</p>
+          <h2 class="section-title" style="margin-left:auto;margin-right:auto;">اختر إقامتك المثالية</h2>
+          <p class="section-desc" style="margin-left:auto;margin-right:auto;">ثلاثة عقارات مميزة، كل واحد بطابعه الخاص. سواء كنت تبحث عن فخامة حضرية، استراحة خاصة، أو بيت بعيد عن البيت — باترن عندها مكانك.</p>
+        </div>
+      </div>
+
+      <div class="properties-grid">
+
+        <!-- Property Card: WKN 25 -->
+        <div class="property-card fade-up" onclick="showPage('alghadeer')">
+          <div class="property-card-image">
+            <img src="AlGhadeer/IMG_8936.jpg" alt="WKN 25 Living" onerror="this.parentElement.style.background='var(--warm-gray)'">
+            <div class="property-card-badge">
+              <span lang-en>Apartment</span><span lang-ar>شقة فندقية</span>
+            </div>
+          </div>
+          <div class="property-card-body">
+            <p class="property-card-location">
+              <span lang-en>Al Ghadeer, Riyadh</span><span lang-ar>الغدير، الرياض</span>
+            </p>
+            <h3 class="property-card-name">
+              <span lang-en>WKN 25 Living</span><span lang-ar>وكن ٢٥ ليفنق</span>
+            </h3>
+            <p class="property-card-desc">
+              <span lang-en>A luxurious serviced apartment in a prime location. Three bedrooms, a spacious living area with terrace, and all utilities included.</span>
+              <span lang-ar>شقة فندقية فاخرة في موقع مميز. ثلاث غرف نوم، صالة واسعة مع تراس، وجميع الخدمات مشمولة.</span>
+            </p>
+            <div class="property-card-features">
+              <span class="feature-item">
+                <svg viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0h4"/></svg>
+                <span lang-en>3 Beds</span><span lang-ar>٣ غرف</span>
+              </span>
+              <span class="feature-item">
+                <svg viewBox="0 0 24 24"><path d="M4 4h16v12H4zM4 16v4M20 16v4M8 16v4M16 16v4"/></svg>
+                <span lang-en>3 Baths</span><span lang-ar>٣ حمامات</span>
+              </span>
+              <span class="feature-item">
+                <svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                <span lang-en>Prime</span><span lang-ar>موقع مميز</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property Card: Qairawan -->
+        <div class="property-card fade-up" onclick="showPage('qairawan')">
+          <div class="property-card-image">
+            <img src="AlQairawan/2D25630C-129F-4D9F-8C90-A83AD81C4C5A.JPEG" alt="Qairawan Living" onerror="this.parentElement.style.background='var(--warm-gray)'">
+            <div class="property-card-badge">
+              <span lang-en>Apartment</span><span lang-ar>شقة خاصة</span>
+            </div>
+          </div>
+          <div class="property-card-body">
+            <p class="property-card-location">
+              <span lang-en>Al Qairawan, Riyadh</span><span lang-ar>القيروان، الرياض</span>
+            </p>
+            <h3 class="property-card-name">
+              <span lang-en>Qairawan Living</span><span lang-ar>القيروان ليفنق</span>
+            </h3>
+            <p class="property-card-desc">
+              <span lang-en>A modern apartment with a private entrance. Fully furnished with new interiors, an office space, and high-speed internet.</span>
+              <span lang-ar>شقة حديثة بمدخل خاص. مؤثثة بالكامل بأثاث جديد، غرفة مكتب، وإنترنت عالي السرعة.</span>
+            </p>
+            <div class="property-card-features">
+              <span class="feature-item">
+                <svg viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0h4"/></svg>
+                <span lang-en>2 Beds</span><span lang-ar>٢ غرف</span>
+              </span>
+              <span class="feature-item">
+                <svg viewBox="0 0 24 24"><path d="M4 4h16v12H4zM4 16v4M20 16v4M8 16v4M16 16v4"/></svg>
+                <span lang-en>3 Baths</span><span lang-ar>٣ حمامات</span>
+              </span>
+              <span class="feature-item">
+                <svg viewBox="0 0 24 24"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                <span lang-en>Private</span><span lang-ar>خصوصية</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property Card: Banan Retreat -->
+        <div class="property-card fade-up" onclick="showPage('banban')">
+          <div class="property-card-image">
+            <img src="Banban/DJI_0518.JPG" alt="Banan Retreat" onerror="this.parentElement.style.background='var(--warm-gray)'">
+            <div class="property-card-badge">
+              <span lang-en>Retreat</span><span lang-ar>استراحة</span>
+            </div>
+          </div>
+          <div class="property-card-body">
+            <p class="property-card-location">
+              <span lang-en>Banban, Riyadh</span><span lang-ar>بنبان، الرياض</span>
+            </p>
+            <h3 class="property-card-name">
+              <span lang-en>Banan Retreat</span><span lang-ar>استراحة بنان</span>
+            </h3>
+            <p class="property-card-desc">
+              <span lang-en>A private retreat for gatherings and special occasions. A large majlis, landscaped gardens, and a separate building for overnight stays.</span>
+              <span lang-ar>استراحة خاصة للجمعات والمناسبات. مجلس كبير، حدائق منسّقة، ومبنى مستقل للإقامة.</span>
+            </p>
+            <div class="property-card-features">
+              <span class="feature-item">
+                <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+                <span lang-en>22 Guests</span><span lang-ar>٢٢ ضيف</span>
+              </span>
+              <span class="feature-item">
+                <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/></svg>
+                <span lang-en>10 Cars</span><span lang-ar>١٠ سيارات</span>
+              </span>
+              <span class="feature-item">
+                <svg viewBox="0 0 24 24"><path d="M5 3v4M3 5h4M6 17v4m-2-2h4M13 3l2 2-2 2M19 17l2 2-2 2M21 3l-6 6M14 14l7 7"/></svg>
+                <span lang-en>Gardens</span><span lang-ar>حدائق</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="cta-section">
+    <div class="container fade-up">
+      <div lang-en>
+        <p class="section-label">Ready to Experience Pattern?</p>
+        <h2 class="section-title">Your Next Stay<br>Starts Here</h2>
+        <p class="section-desc">Reach out to us directly on WhatsApp. We respond quickly and handle every booking personally.</p>
+      </div>
+      <div lang-ar class="ar-text" style="text-align:center;">
+        <p class="section-label">جاهز تجرّب باترن؟</p>
+        <h2 class="section-title" style="margin-left:auto;margin-right:auto;">إقامتك القادمة<br>تبدأ من هنا</h2>
+        <p class="section-desc" style="margin-left:auto;margin-right:auto;">تواصل معنا مباشرة عبر واتساب. نرد بسرعة ونتابع كل حجز بشكل شخصي.</p>
+      </div>
+      <a href="https://wa.me/966531217758?text=Hello%20Pattern%2C%20I%E2%80%99d%20like%20to%20book%20a%20stay." target="_blank" class="btn-whatsapp" lang-en>
+        <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Book Now via WhatsApp
+      </a>
+      <a href="https://wa.me/966531217758?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D8%A8%D8%A7%D8%AA%D8%B1%D9%86%D8%8C%20%D8%A3%D8%A8%D8%BA%D9%89%20%D8%A3%D8%AD%D8%AC%D8%B2%20%D8%A5%D9%82%D8%A7%D9%85%D8%A9." target="_blank" class="btn-whatsapp" lang-ar>
+        <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        احجز الآن عبر واتساب
+      </a>
+    </div>
+  </section>
+
+</div>
+
+
+<!-- ============================================
+     PAGE: PROPERTIES LISTING
+     ============================================ -->
+<div class="page-section" id="page-properties">
+  <section class="property-hero" style="height:50vh;min-height:400px;">
+    <img src="Banban/DJI_0518.JPG" alt="Properties" class="hero-bg" style="opacity:0.4" onerror="this.style.display='none'">
+    <div class="container property-hero-content">
+      <div lang-en>
+        <p class="section-label">Pattern Properties</p>
+        <h1>Our Collection</h1>
+        <p>Three curated spaces across Riyadh, each designed for a different kind of stay.</p>
+      </div>
+      <div lang-ar class="ar-text">
+        <p class="section-label">عقارات باترن</p>
+        <h1>مجموعتنا</h1>
+        <p>ثلاث مساحات مختارة في الرياض، كل واحدة مصمّمة لنوع مختلف من الإقامة.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="properties-grid">
+        <!-- Same 3 property cards as homepage -->
+        <div class="property-card fade-up" onclick="showPage('alghadeer')">
+          <div class="property-card-image">
+            <img src="AlGhadeer/IMG_8936.jpg" alt="WKN 25 Living" onerror="this.parentElement.style.background='var(--warm-gray)'">
+            <div class="property-card-badge"><span lang-en>Apartment</span><span lang-ar>شقة فندقية</span></div>
+          </div>
+          <div class="property-card-body">
+            <p class="property-card-location"><span lang-en>Al Ghadeer, Riyadh</span><span lang-ar>الغدير، الرياض</span></p>
+            <h3 class="property-card-name"><span lang-en>WKN 25 Living</span><span lang-ar>وكن ٢٥ ليفنق</span></h3>
+            <p class="property-card-desc"><span lang-en>Luxurious serviced apartment with three bedrooms, spacious living, terrace, and all utilities included. Prime Al Ghadeer location.</span><span lang-ar>شقة فندقية فاخرة بثلاث غرف نوم، صالة واسعة مع تراس، وجميع الخدمات مشمولة. موقع مميز بالغدير.</span></p>
+          </div>
+        </div>
+
+        <div class="property-card fade-up" onclick="showPage('qairawan')">
+          <div class="property-card-image">
+            <img src="AlQairawan/2D25630C-129F-4D9F-8C90-A83AD81C4C5A.JPEG" alt="Qairawan Living" onerror="this.parentElement.style.background='var(--warm-gray)'">
+            <div class="property-card-badge"><span lang-en>Apartment</span><span lang-ar>شقة خاصة</span></div>
+          </div>
+          <div class="property-card-body">
+            <p class="property-card-location"><span lang-en>Al Qairawan, Riyadh</span><span lang-ar>القيروان، الرياض</span></p>
+            <h3 class="property-card-name"><span lang-en>Qairawan Living</span><span lang-ar>القيروان ليفنق</span></h3>
+            <p class="property-card-desc"><span lang-en>Modern apartment with private entrance, new furnishings, office space, and high-speed internet. Monthly stays welcome.</span><span lang-ar>شقة حديثة بمدخل خاص، أثاث جديد، غرفة مكتب، وإنترنت عالي السرعة. مناسبة للإيجار الشهري.</span></p>
+          </div>
+        </div>
+
+        <div class="property-card fade-up" onclick="showPage('banban')">
+          <div class="property-card-image">
+            <img src="Banban/DJI_0518.JPG" alt="Banan Retreat" onerror="this.parentElement.style.background='var(--warm-gray)'">
+            <div class="property-card-badge"><span lang-en>Retreat</span><span lang-ar>استراحة</span></div>
+          </div>
+          <div class="property-card-body">
+            <p class="property-card-location"><span lang-en>Banban, Riyadh</span><span lang-ar>بنبان، الرياض</span></p>
+            <h3 class="property-card-name"><span lang-en>Banan Retreat</span><span lang-ar>استراحة بنان</span></h3>
+            <p class="property-card-desc"><span lang-en>Private retreat for gatherings with a large majlis for 22, landscaped gardens, and separate guest quarters.</span><span lang-ar>استراحة خاصة للجمعات مع مجلس يتسع لـ٢٢ شخص، حدائق منسّقة، ومبنى مستقل للضيوف.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- ============================================
+     PAGE: WKN 25 LIVING (Al Ghadeer)
+     ============================================ -->
+<div class="page-section" id="page-alghadeer">
+
+  <section class="property-hero">
+    <img src="AlGhadeer/IMG_8936.jpg" alt="WKN 25 Living by Pattern" onerror="this.style.display='none'">
+    <div class="container property-hero-content">
+      <div lang-en>
+        <p class="section-label">Serviced Apartment &mdash; Al Ghadeer</p>
+        <h1>WKN 25 Living</h1>
+        <p>A complete living experience in one of Riyadh's most sought-after neighborhoods.</p>
+      </div>
+      <div lang-ar class="ar-text">
+        <p class="section-label">شقة فندقية &mdash; الغدير</p>
+        <h1>وكن ٢٥ ليفنق</h1>
+        <p>تجربة سكن متكاملة في واحد من أرقى أحياء الرياض.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Description & Features -->
+  <section class="property-detail">
+    <div class="container">
+      <div class="property-detail-grid">
+        <div>
+          <div lang-en>
+            <h3>About This Property</h3>
+            <p>A luxurious serviced apartment in WKN 25, located in the distinguished Al Ghadeer district. This property offers a complete living experience in a prime Riyadh location — thoughtfully designed for comfort, convenience, and elevated daily living. The apartment features three bedrooms including a dedicated office and reading room, a spacious living area that opens onto a private terrace, three well-appointed bathrooms, and a fully equipped laundry room. The kitchen comes complete with everything you need. Rent includes electricity, water, high-speed internet, building services, and a dedicated parking spot.</p>
+          </div>
+          <div lang-ar class="ar-text">
+            <h3>عن العقار</h3>
+            <p>شقة فندقية فخمة في مشروع وكن ٢٥ بحي الغدير المميز. توفر تجربة سكن متكاملة في موقع استثنائي بالرياض — مصمّمة بعناية للراحة والأناقة والحياة اليومية الراقية. تتكون من ثلاث غرف نوم تشمل غرفة مكتب وقراءة، صالة واسعة تطل على تراس خاص، ثلاث دورات مياه مجهزة، وغرفة غسيل متكاملة. المطبخ مجهز بالكامل بكل ما تحتاجه. السعر يشمل الكهرباء والماء والإنترنت وخدمات العمارة وموقف سيارة مخصص.</p>
+          </div>
+        </div>
+        <div>
+          <div lang-en>
+            <h3>Features</h3>
+            <ul class="features-list">
+              <li>3 Bedrooms (incl. office/reading room)</li>
+              <li>Spacious Living Room</li>
+              <li>Private Terrace</li>
+              <li>3 Full Bathrooms</li>
+              <li>Fully Equipped Kitchen</li>
+              <li>Laundry Room</li>
+              <li>Electricity & Water Included</li>
+              <li>High-Speed Internet</li>
+              <li>Building Services Included</li>
+              <li>Dedicated Parking</li>
+            </ul>
+          </div>
+          <div lang-ar class="ar-text">
+            <h3>المميزات</h3>
+            <ul class="features-list">
+              <li>٣ غرف نوم (تشمل غرفة مكتب/قراءة)</li>
+              <li>صالة واسعة</li>
+              <li>تراس خاص</li>
+              <li>٣ دورات مياه كاملة</li>
+              <li>مطبخ متكامل التجهيز</li>
+              <li>غرفة غسيل مجهزة</li>
+              <li>كهرباء وماء مشمولة</li>
+              <li>إنترنت عالي السرعة</li>
+              <li>خدمات العمارة مشمولة</li>
+              <li>موقف سيارة مخصص</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Suitable For -->
+  <section class="suitable-for">
+    <div class="container">
+      <div style="text-align:center;">
+        <div lang-en>
+          <p class="section-label">Ideal For</p>
+          <h2 class="section-title">Who Is This For?</h2>
+        </div>
+        <div lang-ar class="ar-text" style="text-align:center;">
+          <p class="section-label">مناسب لـ</p>
+          <h2 class="section-title">لمن هذا العقار؟</h2>
+        </div>
+      </div>
+      <div class="suitable-grid">
+        <div class="suitable-card">
+          <div class="icon">👨‍💼</div>
+          <h4><span lang-en>Business Travelers</span><span lang-ar>رجال الأعمال</span></h4>
+          <p><span lang-en>A dedicated office room and central location for professionals on extended stays.</span><span lang-ar>غرفة مكتب مخصصة وموقع مركزي للمحترفين في إقامات طويلة.</span></p>
+        </div>
+        <div class="suitable-card">
+          <div class="icon">👨‍👩‍👧‍👦</div>
+          <h4><span lang-en>Small Families</span><span lang-ar>العائلات الصغيرة</span></h4>
+          <p><span lang-en>Three bedrooms, a living area, and all utilities — a ready-made home.</span><span lang-ar>ثلاث غرف، صالة معيشة، وجميع الخدمات — بيت جاهز.</span></p>
+        </div>
+        <div class="suitable-card">
+          <div class="icon">🏙️</div>
+          <h4><span lang-en>Riyadh Newcomers</span><span lang-ar>القادمون الجدد للرياض</span></h4>
+          <p><span lang-en>Everything included from day one — no setup, no hassle, just arrive.</span><span lang-ar>كل شي جاهز من أول يوم — بدون تجهيزات، بدون تعقيد، بس وصّل.</span></p>
+        </div>
+        <div class="suitable-card">
+          <div class="icon">✈️</div>
+          <h4><span lang-en>Extended Visitors</span><span lang-ar>الزوار لفترات طويلة</span></h4>
+          <p><span lang-en>A premium alternative to hotels for stays of a month or more.</span><span lang-ar>بديل راقي عن الفنادق لإقامات شهر أو أكثر.</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Lines -->
+  <section class="experience-section">
+    <div class="container">
+      <div style="text-align:center;">
+        <div lang-en>
+          <p class="section-label" style="color:var(--silver);">The Experience</p>
+          <h2 class="section-title" style="color:var(--white);">What It Feels Like</h2>
+        </div>
+        <div lang-ar class="ar-text" style="text-align:center;">
+          <p class="section-label" style="color:var(--silver);">التجربة</p>
+          <h2 class="section-title" style="color:var(--white);">كيف راح تحس؟</h2>
+        </div>
+      </div>
+      <div class="experience-lines">
+        <div class="experience-line" lang-en>Wake up to natural light in a space that feels like your own — not a hotel room.</div>
+        <div class="experience-line" lang-en>Work from a quiet office corner, then unwind on a private terrace at sunset.</div>
+        <div class="experience-line" lang-en>Cook your morning coffee in a fully stocked kitchen, just the way you like it.</div>
+        <div class="experience-line" lang-en>No utility bills, no internet setup — just your life, simplified.</div>
+        <div class="experience-line ar-text" lang-ar>تصحى على ضوء طبيعي في مكان يحسسك إنه بيتك — مو غرفة فندق.</div>
+        <div class="experience-line ar-text" lang-ar>تشتغل من زاوية مكتب هادية، وبعدين تسترخي على التراس وقت الغروب.</div>
+        <div class="experience-line ar-text" lang-ar>تسوّي قهوتك الصباحية في مطبخ مجهز بالكامل، على ذوقك.</div>
+        <div class="experience-line ar-text" lang-ar>بدون فواتير، بدون إعداد إنترنت — بس حياتك، بكل بساطة.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHECK AVAILABILITY — WKN 25 -->
+  <section class="booking-section" id="booking-alghadeer">
+    <div class="container">
+      <div style="text-align:center;">
+        <div lang-en>
+          <p class="section-label">Plan Your Stay</p>
+          <h2 class="section-title">Check Availability</h2>
+        </div>
+        <div lang-ar class="ar-text" style="text-align:center;">
+          <p class="section-label">خطّط لإقامتك</p>
+          <h2 class="section-title">تحقق من التوفر</h2>
+        </div>
+      </div>
+      <div class="booking-card">
+        <div class="booking-loading" id="loading-alghadeer">
+          <span class="spinner"></span>
+          <span lang-en>Loading availability…</span><span lang-ar>جاري تحميل التوفر…</span>
+        </div>
+        <div class="booking-legend" id="legend-alghadeer" style="display:none;">
+          <div class="legend-item"><span class="legend-swatch available"></span><span lang-en>Available</span><span lang-ar>متاح</span></div>
+          <div class="legend-item"><span class="legend-swatch booked"></span><span lang-en>Booked</span><span lang-ar>محجوز</span></div>
+        </div>
+        <div class="booking-dates">
+          <div class="booking-field">
+            <label><span lang-en>Check-in</span><span lang-ar>تاريخ الدخول</span></label>
+            <input type="text" id="checkin-alghadeer" placeholder="Select date" readonly>
+          </div>
+          <div class="booking-field">
+            <label><span lang-en>Check-out</span><span lang-ar>تاريخ الخروج</span></label>
+            <input type="text" id="checkout-alghadeer" placeholder="Select date" readonly>
+          </div>
+        </div>
+        <div class="booking-error" id="error-alghadeer"></div>
+        <div class="booking-summary" id="summary-alghadeer"></div>
+        <button class="btn-book-wa" id="bookbtn-alghadeer" disabled onclick="sendBooking('alghadeer')">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span lang-en>Book via WhatsApp</span><span lang-ar>احجز عبر واتساب</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div lang-en>
+        <p class="section-label">Interested in WKN 25?</p>
+        <h2 class="section-title" style="color:var(--white);max-width:500px;margin:0 auto 20px;">Book Your Stay</h2>
+        <p class="section-desc" style="color:var(--silver);margin:0 auto 48px;text-align:center;">Message us on WhatsApp and we'll arrange everything for you.</p>
+      </div>
+      <div lang-ar class="ar-text" style="text-align:center;">
+        <p class="section-label">مهتم بـ وكن ٢٥؟</p>
+        <h2 class="section-title" style="color:var(--white);max-width:500px;margin:0 auto 20px;">احجز إقامتك</h2>
+        <p class="section-desc" style="color:var(--silver);margin:0 auto 48px;text-align:center;">راسلنا على واتساب ونرتّب لك كل شي.</p>
+      </div>
+      <a href="https://wa.me/966531217758?text=Hello%20Pattern%2C%20I%E2%80%99m%20interested%20in%20WKN%2025%20Living%20in%20Al%20Ghadeer.%20I%E2%80%99d%20like%20to%20know%20more%20about%20availability%20and%20pricing." target="_blank" class="btn-whatsapp" lang-en>
+        <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Book WKN 25 via WhatsApp
+      </a>
+      <a href="https://wa.me/966531217758?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D8%A8%D8%A7%D8%AA%D8%B1%D9%86%D8%8C%20%D8%A3%D8%A8%D8%BA%D9%89%20%D8%A3%D8%AD%D8%AC%D8%B2%20%D8%B4%D9%82%D8%A9%20%D9%88%D9%83%D9%86%20%D9%A2%D9%A5%20%D8%A8%D8%A7%D9%84%D8%BA%D8%AF%D9%8A%D8%B1.%20%D8%A3%D8%A8%D8%BA%D9%89%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%A7%D9%84%D8%AA%D9%88%D9%81%D8%B1%20%D9%88%D8%A7%D9%84%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1." target="_blank" class="btn-whatsapp" lang-ar>
+        <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        احجز وكن ٢٥ عبر واتساب
+      </a>
+    </div>
+  </section>
+</div>
+
+
+<!-- ============================================
+     PAGE: QAIRAWAN LIVING
+     ============================================ -->
+<div class="page-section" id="page-qairawan">
+
+  <section class="property-hero">
+    <img src="AlQairawan/2D25630C-129F-4D9F-8C90-A83AD81C4C5A.JPEG" alt="Qairawan Living by Pattern" onerror="this.style.display='none'">
+    <div class="container property-hero-content">
+      <div lang-en>
+        <p class="section-label">Private Apartment &mdash; Al Qairawan</p>
+        <h1>Qairawan Living</h1>
+        <p>Modern comfort with complete privacy — your own entrance, your own space.</p>
+      </div>
+      <div lang-ar class="ar-text">
+        <p class="section-label">شقة خاصة &mdash; القيروان</p>
+        <h1>القيروان ليفنق</h1>
+        <p>راحة عصرية بخصوصية كاملة — مدخلك الخاص، مساحتك الخاصة.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="property-detail">
+    <div class="container">
+      <div class="property-detail-grid">
+        <div>
+          <div lang-en>
+            <h3>About This Property</h3>
+            <p>A modern, fully furnished apartment with its own private entrance in the sought-after Al Qairawan neighborhood. Every detail has been considered — from brand-new furniture and clean interiors to a dedicated office room for those who work remotely. The apartment includes two bedrooms with a spacious master suite, a maid's room with laundry area, a storage room, and three bathrooms. The kitchen is fully equipped with all essentials, and high-speed internet is ready from the moment you arrive. Designed for monthly stays, this property strikes the perfect balance between privacy and comfort.</p>
+          </div>
+          <div lang-ar class="ar-text">
+            <h3>عن العقار</h3>
+            <p>شقة حديثة مؤثثة بالكامل بمدخل خاص في حي القيروان الراقي. كل تفصيل مدروس — من الأثاث الجديد والنظافة الفائقة إلى غرفة المكتب المخصصة لمن يعمل عن بعد. تتكون من غرفتين نوم مع جناح ماستر واسع، غرفة خادمة مع منطقة غسيل، مستودع، وثلاث دورات مياه. المطبخ مجهز بالكامل بكل الأدوات، والإنترنت عالي السرعة جاهز من لحظة وصولك. مصمّمة للإيجار الشهري، وتجمع بين الخصوصية والراحة بأفضل شكل.</p>
+          </div>
+        </div>
+        <div>
+          <div lang-en>
+            <h3>Features</h3>
+            <ul class="features-list">
+              <li>Private Entrance</li>
+              <li>2 Bedrooms (incl. Master Suite)</li>
+              <li>Dedicated Office Room</li>
+              <li>Maid's Room with Laundry</li>
+              <li>3 Bathrooms</li>
+              <li>Fully Equipped Kitchen</li>
+              <li>Storage Room</li>
+              <li>High-Speed Internet</li>
+              <li>Brand-New Furniture</li>
+              <li>Monthly Rental</li>
+            </ul>
+          </div>
+          <div lang-ar class="ar-text">
+            <h3>المميزات</h3>
+            <ul class="features-list">
+              <li>مدخل خاص</li>
+              <li>٢ غرف نوم (تشمل ماستر)</li>
+              <li>غرفة مكتب مخصصة</li>
+              <li>غرفة خادمة مع غسيل</li>
+              <li>٣ دورات مياه</li>
+              <li>مطبخ متكامل التجهيز</li>
+              <li>مستودع</li>
+              <li>إنترنت عالي السرعة</li>
+              <li>أثاث جديد بالكامل</li>
+              <li>إيجار شهري</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="suitable-for">
+    <div class="container">
+      <div style="text-align:center;">
+        <div lang-en>
+          <p class="section-label">Ideal For</p>
+          <h2 class="section-title">Who Is This For?</h2>
+        </div>
+        <div lang-ar class="ar-text" style="text-align:center;">
+          <p class="section-label">مناسب لـ</p>
+          <h2 class="section-title">لمن هذا العقار؟</h2>
+        </div>
+      </div>
+      <div class="suitable-grid">
+        <div class="suitable-card">
+          <div class="icon">💻</div>
+          <h4><span lang-en>Remote Workers</span><span lang-ar>العاملون عن بعد</span></h4>
+          <p><span lang-en>A private office room and fast internet — your productive home base.</span><span lang-ar>غرفة مكتب خاصة وإنترنت سريع — قاعدتك الإنتاجية.</span></p>
+        </div>
+        <div class="suitable-card">
+          <div class="icon">👫</div>
+          <h4><span lang-en>Couples</span><span lang-ar>الأزواج</span></h4>
+          <p><span lang-en>A private entrance and master suite for a comfortable, intimate stay.</span><span lang-ar>مدخل خاص وجناح ماستر لإقامة مريحة وهادية.</span></p>
+        </div>
+        <div class="suitable-card">
+          <div class="icon">📋</div>
+          <h4><span lang-en>Monthly Tenants</span><span lang-ar>المستأجرون شهرياً</span></h4>
+          <p><span lang-en>Fully furnished and ready — skip the hassle of setting up a new place.</span><span lang-ar>مؤثثة بالكامل وجاهزة — تخطّ تعب تأسيس مكان جديد.</span></p>
+        </div>
+        <div class="suitable-card">
+          <div class="icon">🔒</div>
+          <h4><span lang-en>Privacy Seekers</span><span lang-ar>الباحثون عن الخصوصية</span></h4>
+          <p><span lang-en>Your own entrance means complete independence and peace of mind.</span><span lang-ar>مدخلك الخاص يعني استقلالية كاملة وراحة بال.</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="experience-section">
+    <div class="container">
+      <div style="text-align:center;">
+        <div lang-en>
+          <p class="section-label" style="color:var(--silver);">The Experience</p>
+          <h2 class="section-title" style="color:var(--white);">What It Feels Like</h2>
+        </div>
+        <div lang-ar class="ar-text" style="text-align:center;">
+          <p class="section-label" style="color:var(--silver);">التجربة</p>
+          <h2 class="section-title" style="color:var(--white);">كيف راح تحس؟</h2>
+        </div>
+      </div>
+      <div class="experience-lines">
+        <div class="experience-line" lang-en>Step through your own private entrance into a space that's entirely yours.</div>
+        <div class="experience-line" lang-en>Set up your laptop in a proper office — no more working from the couch.</div>
+        <div class="experience-line" lang-en>Everything is new, clean, and carefully chosen — nothing feels temporary.</div>
+        <div class="experience-line" lang-en>The neighborhood is quiet, the internet is fast, and the world stays outside.</div>
+        <div class="experience-line ar-text" lang-ar>تدخل من بابك الخاص إلى مساحة كلها لك.</div>
+        <div class="experience-line ar-text" lang-ar>تفتح لابتوبك في مكتب حقيقي — مو على الكنبة.</div>
+        <div class="experience-line ar-text" lang-ar>كل شي جديد ونظيف ومختار بعناية — ما فيه شي يحسسك إنه مؤقت.</div>
+        <div class="experience-line ar-text" lang-ar>الحي هادي، الإنترنت سريع، والعالم يبقى برا.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHECK AVAILABILITY — QAIRAWAN -->
+  <section class="booking-section" id="booking-qairawan">
+    <div class="container">
+      <div style="text-align:center;">
+        <div lang-en>
+          <p class="section-label">Plan Your Stay</p>
+          <h2 class="section-title">Check Availability</h2>
+        </div>
+        <div lang-ar class="ar-text" style="text-align:center;">
+          <p class="section-label">خطّط لإقامتك</p>
+          <h2 class="section-title">تحقق من التوفر</h2>
+        </div>
+      </div>
+      <div class="booking-card">
+        <div class="booking-loading" id="loading-qairawan">
+          <span class="spinner"></span>
+          <span lang-en>Loading availability…</span><span lang-ar>جاري تحميل التوفر…</span>
+        </div>
+        <div class="booking-legend" id="legend-qairawan" style="display:none;">
+          <div class="legend-item"><span class="legend-swatch available"></span><span lang-en>Available</span><span lang-ar>متاح</span></div>
+          <div class="legend-item"><span class="legend-swatch booked"></span><span lang-en>Booked</span><span lang-ar>محجوز</span></div>
+        </div>
+        <div class="booking-dates">
+          <div class="booking-field">
+            <label><span lang-en>Check-in</span><span lang-ar>تاريخ الدخول</span></label>
+            <input type="text" id="checkin-qairawan" placeholder="Select date" readonly>
+          </div>
+          <div class="booking-field">
+            <label><span lang-en>Check-out</span><span lang-ar>تاريخ الخروج</span></label>
+            <input type="text" id="checkout-qairawan" placeholder="Select date" readonly>
+          </div>
+        </div>
+        <div class="booking-error" id="error-qairawan"></div>
+        <div class="booking-summary" id="summary-qairawan"></div>
+        <button class="btn-book-wa" id="bookbtn-qairawan" disabled onclick="sendBooking('qairawan')">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span lang-en>Book via WhatsApp</span><span lang-ar>احجز عبر واتساب</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <div lang-en>
+        <p class="section-label">Interested in Qairawan Living?</p>
+        <h2 class="section-title" style="color:var(--white);max-width:500px;margin:0 auto 20px;">Book Your Stay</h2>
+        <p class="section-desc" style="color:var(--silver);margin:0 auto 48px;text-align:center;">Message us on WhatsApp and we'll arrange everything for you.</p>
+      </div>
+      <div lang-ar class="ar-text" style="text-align:center;">
+        <p class="section-label">مهتم بالقيروان ليفنق؟</p>
+        <h2 class="section-title" style="color:var(--white);max-width:500px;margin:0 auto 20px;">احجز إقامتك</h2>
+        <p class="section-desc" style="color:var(--silver);margin:0 auto 48px;text-align:center;">راسلنا على واتساب ونرتّب لك كل شي.</p>
+      </div>
+      <a href="https://wa.me/966531217758?text=Hello%20Pattern%2C%20I%E2%80%99m%20interested%20in%20Qairawan%20Living%20in%20Al%20Qairawan.%20I%E2%80%99d%20like%20to%20know%20about%20availability%20and%20monthly%20rates." target="_blank" class="btn-whatsapp" lang-en>
+        <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Book Qairawan via WhatsApp
+      </a>
+      <a href="https://wa.me/966531217758?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D8%A8%D8%A7%D8%AA%D8%B1%D9%86%D8%8C%20%D8%A3%D8%A8%D8%BA%D9%89%20%D8%A3%D8%AD%D8%AC%D8%B2%20%D8%B4%D9%82%D8%A9%20%D8%A7%D9%84%D9%82%D9%8A%D8%B1%D9%88%D8%A7%D9%86.%20%D8%A3%D8%A8%D8%BA%D9%89%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%A7%D9%84%D8%AA%D9%88%D9%81%D8%B1%20%D9%88%D8%A7%D9%84%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B4%D9%87%D8%B1%D9%8A%D8%A9." target="_blank" class="btn-whatsapp" lang-ar>
+        <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        احجز القيروان عبر واتساب
+      </a>
+    </div>
+  </section>
+</div>
+
+
+<!-- ============================================
+     PAGE: BANAN RETREAT (Banban)
+     ============================================ -->
+<div class="page-section" id="page-banban">
+
+  <section class="property-hero">
+    <img src="Banban/DJI_0518.JPG" alt="Banan Retreat by Pattern" onerror="this.style.display='none'">
+    <div class="container property-hero-content">
+      <div lang-en>
+        <p class="section-label">Private Retreat &mdash; Banban</p>
+        <h1>Banan Retreat</h1>
+        <p>Escape the city. Gather your people. Create the moment.</p>
+      </div>
+      <div lang-ar class="ar-text">
+        <p class="section-label">استراحة خاصة &mdash; بنبان</p>
+        <h1>استراحة بنان</h1>
+        <p>ابتعد عن صخب المدينة. اجمع أحبابك. اصنع اللحظة.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="property-detail">
+    <div class="container">
+      <div class="property-detail-grid">
+        <div>
+          <div lang-en>
+            <h3>About This Property</h3>
+            <p>Banan Retreat is a private escape just outside the city — purpose-built for gatherings, celebrations, and quiet evenings under the stars. The property features a grand majlis that comfortably seats up to 22 guests, surrounded by beautifully landscaped gardens with palm trees and ambient lighting. A separate building houses a private bedroom, a full kitchen, and a small dining area — perfect for overnight stays. With parking for up to 10 cars, this retreat is designed to host with ease and leave lasting impressions.</p>
+          </div>
+          <div lang-ar class="ar-text">
+            <h3>عن العقار</h3>
+            <p>استراحة بنان ملاذ خاص خارج المدينة — مصمّمة للجمعات والاحتفالات والسهرات الهادية تحت النجوم. تتميز بمجلس كبير يتسع لـ ٢٢ شخص بكل راحة، محاط بحدائق منسّقة بأشجار النخيل وإضاءة مميزة. مبنى مستقل يحتوي على غرفة نوم خاصة، مطبخ كامل، وصالة طعام صغيرة — مثالي لمن يبغى يبات. مواقف تتسع لـ ١٠ سيارات، والمكان كله مصمّم عشان تستضيف براحة وتترك انطباع ما ينتسى.</p>
+          </div>
+        </div>
+        <div>
+          <div lang-en>
+            <h3>Features</h3>
+            <ul class="features-list">
+              <li>Grand Majlis (22 guests)</li>
+              <li>Landscaped Gardens</li>
+              <li>Palm Trees & Ambient Lighting</li>
+              <li>Separate Guest Building</li>
+              <li>Private Bedroom</li>
+              <li>Full Kitchen</li>
+              <li>Small Dining Area</li>
+              <li>Parking for 10 Cars</li>
+              <li>Outdoor Seating Areas</li>
+              <li>Peaceful & Private Setting</li>
+            </ul>
+          </div>
+          <div lang-ar class="ar-text">
+            <h3>المميزات</h3>
+            <ul class="features-list">
+              <li>مجلس كبير (٢٢ شخص)</li>
+              <li>حدائق منسّقة</li>
+              <li>نخيل وإضاءة مميزة</li>
+              <li>مبنى ضيوف مستقل</li>
+              <li>غرفة نوم خاصة</li>
+              <li>مطبخ كامل</li>
+              <li>صالة طعام صغيرة</li>
+              <li>مواقف لـ ١٠ سيارات</li>
+              <li>جلسات خارجية</li>
+              <li>أجواء هادية وخصوصية تامة</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="suitable-for">
+    <div class="container">
+      <div style="text-align:center;">
+        <div lang-en>
+          <p class="section-label">Ideal For</p>
+          <h2 class="section-title">Who Is This For?</h2>
+        </div>
+        <div lang-ar class="ar-text" style="text-align:center;">
+          <p class="section-label">مناسب لـ</p>
+          <h2 class="section-title">لمن هذا العقار؟</h2>
+        </div>
+      </div>
+      <div class="suitable-grid">
+        <div class="suitable-card">
+          <div class="icon">👨‍👩‍👧‍👦</div>
+          <h4><span lang-en>Family Gatherings</span><span lang-ar>جمعات العائلة</span></h4>
+          <p><span lang-en>A spacious majlis and gardens — bring everyone together in one place.</span><span lang-ar>مجلس واسع وحدائق — اجمع الكل في مكان واحد.</span></p>
+        </div>
+        <div class="suitable-card">
+          <div class="icon">🎉</div>
+          <h4><span lang-en>Private Events</span><span lang-ar>المناسبات الخاصة</span></h4>
+          <p><span lang-en>Birthdays, milestones, or celebrations — an unforgettable setting.</span><span lang-ar>أعياد ميلاد، مناسبات، واحتفالات — أجواء ما تنتسى.</span></p>
+        </div>
+        <div class="suitable-card">
+          <div class="icon">🌙</div>
+          <h4><span lang-en>Evening Gatherings</span><span lang-ar>السهرات</span></h4>
+          <p><span lang-en>Outdoor seating under the stars, surrounded by beautiful gardens.</span><span lang-ar>جلسات خارجية تحت النجوم، محاطة بحدائق جميلة.</span></p>
+        </div>
+        <div class="suitable-card">
+          <div class="icon">🏕️</div>
+          <h4><span lang-en>Weekend Escapes</span><span lang-ar>عطلة نهاية الأسبوع</span></h4>
+          <p><span lang-en>A quiet retreat away from the city — recharge and reset.</span><span lang-ar>ملاذ هادي بعيد عن المدينة — شحن طاقة وبداية جديدة.</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="experience-section">
+    <div class="container">
+      <div style="text-align:center;">
+        <div lang-en>
+          <p class="section-label" style="color:var(--silver);">The Experience</p>
+          <h2 class="section-title" style="color:var(--white);">What It Feels Like</h2>
+        </div>
+        <div lang-ar class="ar-text" style="text-align:center;">
+          <p class="section-label" style="color:var(--silver);">التجربة</p>
+          <h2 class="section-title" style="color:var(--white);">كيف راح تحس؟</h2>
+        </div>
+      </div>
+      <div class="experience-lines">
+        <div class="experience-line" lang-en>Drive past the city edge and arrive somewhere that feels like another world.</div>
+        <div class="experience-line" lang-en>Watch your guests settle into a majlis lit with warm, ambient light.</div>
+        <div class="experience-line" lang-en>Step into the gardens at night — palm trees, soft lighting, and open sky.</div>
+        <div class="experience-line" lang-en>Stay the night in a private building, wake up to silence and fresh air.</div>
+        <div class="experience-line ar-text" lang-ar>تسوق بعيد عن المدينة وتوصل مكان يحسسك إنك في عالم ثاني.</div>
+        <div class="experience-line ar-text" lang-ar>تشوف ضيوفك يرتاحون في مجلس مضاء بإضاءة دافية ومميزة.</div>
+        <div class="experience-line ar-text" lang-ar>تنزل الحديقة بالليل — نخل، إضاءة ناعمة، وسما مفتوحة.</div>
+        <div class="experience-line ar-text" lang-ar>تبات في مبنى خاص، تصحى على هدوء وهوا نقي.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHECK AVAILABILITY — BANAN -->
+  <section class="booking-section" id="booking-banban">
+    <div class="container">
+      <div style="text-align:center;">
+        <div lang-en>
+          <p class="section-label">Plan Your Gathering</p>
+          <h2 class="section-title">Check Availability</h2>
+        </div>
+        <div lang-ar class="ar-text" style="text-align:center;">
+          <p class="section-label">خطّط لجمعتك</p>
+          <h2 class="section-title">تحقق من التوفر</h2>
+        </div>
+      </div>
+      <div class="booking-card">
+        <div class="booking-loading" id="loading-banban">
+          <span class="spinner"></span>
+          <span lang-en>Loading availability…</span><span lang-ar>جاري تحميل التوفر…</span>
+        </div>
+        <div class="booking-legend" id="legend-banban" style="display:none;">
+          <div class="legend-item"><span class="legend-swatch available"></span><span lang-en>Available</span><span lang-ar>متاح</span></div>
+          <div class="legend-item"><span class="legend-swatch booked"></span><span lang-en>Booked</span><span lang-ar>محجوز</span></div>
+        </div>
+        <div class="booking-dates">
+          <div class="booking-field">
+            <label><span lang-en>Check-in</span><span lang-ar>تاريخ الدخول</span></label>
+            <input type="text" id="checkin-banban" placeholder="Select date" readonly>
+          </div>
+          <div class="booking-field">
+            <label><span lang-en>Check-out</span><span lang-ar>تاريخ الخروج</span></label>
+            <input type="text" id="checkout-banban" placeholder="Select date" readonly>
+          </div>
+        </div>
+        <div class="booking-error" id="error-banban"></div>
+        <div class="booking-summary" id="summary-banban"></div>
+        <button class="btn-book-wa" id="bookbtn-banban" disabled onclick="sendBooking('banban')">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span lang-en>Book via WhatsApp</span><span lang-ar>احجز عبر واتساب</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <div lang-en>
+        <p class="section-label">Interested in Banan Retreat?</p>
+        <h2 class="section-title" style="color:var(--white);max-width:500px;margin:0 auto 20px;">Reserve Your Retreat</h2>
+        <p class="section-desc" style="color:var(--silver);margin:0 auto 48px;text-align:center;">Message us on WhatsApp and we'll arrange everything for your gathering.</p>
+      </div>
+      <div lang-ar class="ar-text" style="text-align:center;">
+        <p class="section-label">مهتم باستراحة بنان؟</p>
+        <h2 class="section-title" style="color:var(--white);max-width:500px;margin:0 auto 20px;">احجز استراحتك</h2>
+        <p class="section-desc" style="color:var(--silver);margin:0 auto 48px;text-align:center;">راسلنا على واتساب ونرتّب لك كل شي لجمعتك.</p>
+      </div>
+      <a href="https://wa.me/966531217758?text=Hello%20Pattern%2C%20I%E2%80%99m%20interested%20in%20Banan%20Retreat%20in%20Banban.%20I%E2%80%99d%20like%20to%20know%20about%20availability%20and%20booking%20details." target="_blank" class="btn-whatsapp" lang-en>
+        <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Book Banan Retreat via WhatsApp
+      </a>
+      <a href="https://wa.me/966531217758?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D8%A8%D8%A7%D8%AA%D8%B1%D9%86%D8%8C%20%D8%A3%D8%A8%D8%BA%D9%89%20%D8%A3%D8%AD%D8%AC%D8%B2%20%D8%A7%D8%B3%D8%AA%D8%B1%D8%A7%D8%AD%D8%A9%20%D8%A8%D9%86%D8%A7%D9%86%20%D8%A8%D8%A8%D9%86%D8%A8%D8%A7%D9%86.%20%D8%A3%D8%A8%D8%BA%D9%89%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%A7%D9%84%D8%AA%D9%88%D9%81%D8%B1%20%D9%88%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%20%D8%A7%D9%84%D8%AD%D8%AC%D8%B2." target="_blank" class="btn-whatsapp" lang-ar>
+        <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        احجز استراحة بنان عبر واتساب
+      </a>
+    </div>
+  </section>
+</div>
+
+
+<!-- ============================================
+     FOOTER (Global)
+     ============================================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          PATTERN
+          <span lang-en>WHERE THE ARCH IS ART</span>
+          <span lang-ar>حيث العمارة فن</span>
+        </div>
+        <p lang-en>Premium serviced apartments and retreats in Riyadh. Curated living for those who appreciate the art of space.</p>
+        <p lang-ar class="ar-text">شقق فندقية واستراحات مميزة في الرياض. إقامة مختارة لمن يقدّر فن المساحات.</p>
+      </div>
+      <div>
+        <h5><span lang-en>Properties</span><span lang-ar>العقارات</span></h5>
+        <ul>
+          <li><a href="#" onclick="showPage('alghadeer'); return false;"><span lang-en>WKN 25 Living</span><span lang-ar>وكن ٢٥ ليفنق</span></a></li>
+          <li><a href="#" onclick="showPage('qairawan'); return false;"><span lang-en>Qairawan Living</span><span lang-ar>القيروان ليفنق</span></a></li>
+          <li><a href="#" onclick="showPage('banban'); return false;"><span lang-en>Banan Retreat</span><span lang-ar>استراحة بنان</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <h5><span lang-en>Navigation</span><span lang-ar>التنقل</span></h5>
+        <ul>
+          <li><a href="#" onclick="showPage('home'); return false;"><span lang-en>Home</span><span lang-ar>الرئيسية</span></a></li>
+          <li><a href="#" onclick="showPage('properties'); return false;"><span lang-en>All Properties</span><span lang-ar>جميع العقارات</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <h5><span lang-en>Contact</span><span lang-ar>تواصل</span></h5>
+        <ul>
+          <li><a href="https://wa.me/966531217758" target="_blank">WhatsApp</a></li>
+          <li><a href="mailto:info@pattern.sa">info@pattern.sa</a></li>
+          <li><a href="https://pattern.sa" target="_blank">pattern.sa</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Pattern. <span lang-en>All rights reserved.</span><span lang-ar>جميع الحقوق محفوظة.</span></p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+        <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ============================================
+     JAVASCRIPT
+     ============================================ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
